@@ -1,6 +1,6 @@
-# Scsh IR Spec
+# Shsc IR Spec
 
-This document outlines the specification for the intermediate code used for a program written in `Scsh`.
+This document outlines the specification for the intermediate code used for a program written in `Shsc`.
 The intermediate code uses one-byte mnemonics to represent various operations and uses 3 Address Codes (3AC).
 
 Each operand can be either a source `src` or destination `dest`.
@@ -9,7 +9,7 @@ Each operand can be either a source `src` or destination `dest`.
 The bytecode file follows the following format:
 
 ```
-FILE TYPE         : 4 B : string "scsh" ]
+FILE TYPE         : 4 B : string "shsc" ]
 VERSION           : 2 B                 ]
 CONST POOL SIZE   : 8 B                 ]
 CODE SECTION SIZE : 8 B                 ] <-- file headers (38 B)
